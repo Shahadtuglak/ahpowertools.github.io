@@ -10525,10 +10525,13 @@ body {
 h1 {
     font-family: 'Staatliches', cursive;
     font-size: 50px;
-    padding-bottom: 1rem;
+    padding-bottom: 2px;
     text-align: center;
     font-weight: bolder !important;
 }
+
+
+/* Header */
 
 .main-header {
     width: 100%;
@@ -10539,6 +10542,9 @@ h1 {
     font-family: 'Staatliches', cursive;
     color: #1D2228;
 }
+
+
+/* Navbar */
 
 .nav-item a:hover {
     background-color: black;
@@ -10558,6 +10564,9 @@ h1 {
     background-color: grey;
 }
 
+
+/* Showcase */
+
 .showcase {
     background-image: url('showcase.jpg');
     width: 100%;
@@ -10567,41 +10576,39 @@ h1 {
     background-size: cover;
 }
 
+
+/* About */
+
 .about {
     text-align: center;
     padding: 20px;
     margin: 30px;
 }
 
+
+/* Contact  */
+
 #contact {
-    line-height: 2px;
-    display: flex;
+    margin: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact-info {
+    padding: 10px;
+}
+
+.contact-map {
     margin: 50px;
 }
 
-.contactinfo {
-    flex: 1;
-    padding: 25px;
-}
-
-.map {
+iframe {
     height: 300px;
-    width: 550px;
-    flex: 2;
+    width: 100%;
 }
 
-@media (max-width: 768px) {
-    #contact {
-        margin: 10px;
-    }
-    .map {
-        height: 200px;
-        width: 250px;
-    }
-    .contactinfo {
-        padding: 5px;
-    }
-}
+
+/* Footer */
 
 footer {
     text-align: center;
