@@ -10585,6 +10585,12 @@ h1 {
     margin: 30px;
 }
 
+@media(max-width:600px) {
+    .about {
+        margin: 0;
+    }
+}
+
 
 /* Contact  */
 
