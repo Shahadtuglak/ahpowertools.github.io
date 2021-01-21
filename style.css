@@ -10507,6 +10507,12 @@ fieldset:disabled .btn {
 
 /*# sourceMappingURL=bootstrap.css.map */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: serif !important;
     /* background-color: #DAD7D7; */
@@ -10585,10 +10591,41 @@ h1 {
     margin: 30px;
 }
 
-@media(max-width:600px) {
-    .about {
-        margin: 0;
-    }
+
+/* Product Section */
+
+.product {
+    text-align: center;
+    color: blue;
+    /* display: flex;
+    justify-content: space-around; */
+}
+
+.product1 img {
+    width: 300px;
+    height: 250px;
+}
+
+
+/* Construction Work */
+
+.constructionwork {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.work1 img {
+    width: 300px;
+    height: 250px;
+}
+
+
+/*Quality Policy */
+
+.quality {
+    margin: 50px;
+    text-align: center;
 }
 
 
@@ -10618,4 +10655,61 @@ iframe {
 
 footer {
     text-align: center;
+}
+
+
+/* Media Query */
+
+
+/* Desktop */
+
+@media (min-width:1024px) {
+    .product {
+        display: flex;
+        justify-content: space-around;
+    }
+    .product-border {
+        border: 2px solid black;
+    }
+}
+
+
+/* Tablet */
+
+@media(min-width:769px) and (max-width:1023px) {
+    .product1 {
+        flex-basis: 100%;
+    }
+    .product1 img {
+        width: 500px;
+        height: 300px;
+    }
+    .product-border {
+        border: 1px solid black;
+    }
+}
+
+
+/* Mobile */
+
+@media(max-width:768px) {
+    .product {
+        flex-basis: 100%;
+    }
+    .product1 img {
+        width: 300px;
+        height: 250px;
+    }
+    .product-border {
+        border: 1px dotted black;
+    }
+    .quality {
+        margin: 5px;
+    }
+}
+
+@media(max-width:600px) {
+    .about {
+        margin: 0;
+    }
 }
